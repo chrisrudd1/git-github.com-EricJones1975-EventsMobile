@@ -28,8 +28,6 @@
 	<string>com.rfidiom.foreverliving.handheld.napn</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>EventsMobile</string>
 	<key>XSAppIconAssets</key>
