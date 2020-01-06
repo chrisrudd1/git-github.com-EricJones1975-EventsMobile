@@ -132,4 +132,43 @@
       <Name>EventsMobile</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SplashImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SplashImageb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rfidiomlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loginimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LoginBackground-Landscape_ipad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loginbackgroundphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login.png" />
+  </ItemGroup>
 </Project>

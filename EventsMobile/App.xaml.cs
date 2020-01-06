@@ -1,4 +1,5 @@
 ﻿using System;
+using EventsMobile;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,11 +7,12 @@ namespace EventsMobile
 {
     public partial class App : Application
     {
+        public static MainPage PageMain { get; set; }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new SplashPage();
         }
 
         protected override void OnStart()
