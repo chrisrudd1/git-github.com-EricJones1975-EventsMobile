@@ -8,55 +8,47 @@
              NavigationPage.HasNavigationBar="False"
              x:Class="EventsMobile.MainMenuPage">
 
-    
-
     <NavigationPage Title="Check In" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Checkin />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
+    <NavigationPage Title="Headsets" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Login />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
+    <NavigationPage Title="Meals" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Login />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
+    <NavigationPage Title="Training" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Login />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
+    <NavigationPage Title="Gifts" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Login />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
+    <NavigationPage Title="Activities" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Login />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
+    <NavigationPage Title="Settings" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Login />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
+    <NavigationPage Title="About Us" IconImageSource="tab_feed.png">
         <x:Arguments>
             <pages:Login />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Tab 4" IconImageSource="tab_feed.png">
-        <x:Arguments>
-            <pages:Login />
-        </x:Arguments>
-    </NavigationPage>
-
-</TabbedPage>
+    </TabbedPage>

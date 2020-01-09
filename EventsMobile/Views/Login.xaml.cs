@@ -19,15 +19,7 @@ namespace EventsMobile
 
         private async void Login_button_OnClicked(object sender, EventArgs e)
         {
-            try
-            {
-                await Navigation.PushAsync(new MainMenuPage());
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception);
-                throw;
-            }
+            await Navigation.PushModalAsync(new MainMenuPage());
         }
     }
 }

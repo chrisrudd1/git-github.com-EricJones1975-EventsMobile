@@ -62,8 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -88,9 +88,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EventsMobile\EventsMobile.csproj">
       <Project>{47A663FB-164E-4453-8C57-1E687B9B9389}</Project>
@@ -98,40 +96,40 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\login.png" />
+    <AndroidResource Include="Resources\drawable\login.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\loginbackgroundphone.png" />
+    <AndroidResource Include="Resources\drawable\loginbackgroundphone.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\loginimage.png" />
+    <AndroidResource Include="Resources\drawable\loginimage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\rfidiomlogo.png" />
+    <AndroidResource Include="Resources\drawable\rfidiomlogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\splash1.jpeg" />
+    <AndroidResource Include="Resources\drawable\splash1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\splash2.jpeg" />
+    <AndroidResource Include="Resources\drawable\splash2.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\splash3.jpeg" />
+    <AndroidResource Include="Resources\drawable\splash3.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\splash4.jpeg" />
+    <AndroidResource Include="Resources\drawable\splash4.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\SplashImage.jpg" />
+    <AndroidResource Include="Resources\drawable\SplashImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\SplashImageb.jpg" />
+    <AndroidResource Include="Resources\drawable\SplashImageb.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tab_feed.png" />
+    <AndroidResource Include="Resources\drawable\tab_feed.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tab_icon.png" />
+    <AndroidResource Include="Resources\drawable\tab_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
