@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace EventsMobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Settings : ContentView
+    public partial class Settings: ContentPage
     {
         public Settings()
         {

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundImageSource="login.png"
+             x:Class="EventsMobile.Views.Headsets">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Grid BackgroundColor ="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height ="Auto"></RowDefinition>
+                    <RowDefinition Height ="Auto"></RowDefinition>
+                    <RowDefinition Height ="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout x:Name ="ReaderPageHeader" Padding="40,30,40,30">
+                    <Label Text ="Headsets" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Italic, Bold" FontSize="Title"></Label>
+                </StackLayout>
+                <Grid Grid.Row="2">
+                    <StackLayout x:Name="HeadsetsDivider" BackgroundColor="White"></StackLayout>
+                </Grid>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+               
+                <Grid Grid.Row="2">
+                    <StackLayout Padding="10">
+                        <Label x:Name="NameLabel" Text="Name:" TextColor="White" FontAttributes="Bold" FontSize="15"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Padding="10">
+                        <Label x:Name="NamePopUpLabel" Text="Joe Bloggs" TextColor="White" FontAttributes="Bold" FontSize="15" ></Label>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <StackLayout Padding="10">
+                        <Label x:Name="CountryLabel" Text="Country:" TextColor="White" FontAttributes="Bold" FontSize="15" ></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Padding="10">
+                        <Label x:Name ="CountryPopUpLabel" Text="United Kingdom" TextColor="White" FontAttributes="Bold" FontSize="15"></Label>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <StackLayout x:Name="HeadsetsDivider2" BackgroundColor="White" ></StackLayout>
+
+                </Grid>
+            </Grid> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

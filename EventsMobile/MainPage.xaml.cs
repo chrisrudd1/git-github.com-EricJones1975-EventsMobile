@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EventsMobile.Database;
 using Xamarin.Forms;
 
 namespace EventsMobile
@@ -16,6 +17,26 @@ namespace EventsMobile
         public MainPage()
         {
             InitializeComponent();
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            ListView.ItemsSource = await App.Database.GetFboAsync();
+        }
+
+        async void OnButtonClicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(firstNameEntry.Text) && !string.IsNullOrWhiteSpace(secondNameEntry.Text))
+            {
+                await App.Database.SavePersonAsync(new Fbo()
+                {
+                    FirstName = firstNameEntry.Text,
+                    SecondName =secondNameEntry.Text
+                });
+
+                firstNameEntry.Text = secondNameEntry.Text = string.Empty;
+                ListView.ItemsSource = await App.Database.GetFboAsync();
+            }
         }
     }
 }

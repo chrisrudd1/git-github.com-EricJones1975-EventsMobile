@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EventsMobile
+namespace EventsMobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainMenuPage : TabbedPage
+    public partial class Headsets : ContentPage
     {
-       
-
-        public MainMenuPage()
+        public Headsets()
         {
             InitializeComponent();
         }

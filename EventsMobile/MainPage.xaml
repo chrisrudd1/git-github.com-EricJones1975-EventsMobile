@@ -6,11 +6,21 @@
              mc:Ignorable="d"
              x:Class="EventsMobile.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Margin="20,35,20,20" >
+        <Entry x:Name="firstNameEntry"
+               Placeholder="Enter name" />
+        <Entry x:Name="secondNameEntry"
+               Placeholder="Enter age" />
+        <Button Text="Add to Database"
+                Clicked="OnButtonClicked" />
+        <ListView x:Name="ListView">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <TextCell Text="{Binding FirstName}"
+                              Detail="{Binding SecondName}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 
 </ContentPage>
