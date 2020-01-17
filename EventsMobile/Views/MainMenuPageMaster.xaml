@@ -23,7 +23,7 @@
           </x:Array>
       </d:ListView.ItemsSource>
       <ListView.Header>
-        <Grid BackgroundColor="PaleVioletRed">
+        <Grid BackgroundColor="SlateGray">
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
@@ -52,7 +52,7 @@
                     VerticalTextAlignment="Center" 
                     Text="{Binding Title}" 
                     d:Text="{Binding}"
-                    FontSize="24"/>
+                    FontSize="15"/>
             </StackLayout>
           </ViewCell>
         </DataTemplate>

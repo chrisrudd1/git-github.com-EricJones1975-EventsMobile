@@ -8,6 +8,7 @@
              x:Class="EventsMobile.Views.Headsets">
    
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Grid BackgroundColor ="SlateGray">
                 <Grid.RowDefinitions>
@@ -15,7 +16,7 @@
                     <RowDefinition Height ="Auto"></RowDefinition>
                     <RowDefinition Height ="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
-                <StackLayout x:Name ="ReaderPageHeader" Padding="40,30,40,30">
+                <StackLayout x:Name ="HeadsetsPageHeader" Padding="40,30,40,30">
                     <Label Text ="Headsets" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Italic, Bold" FontSize="Title"></Label>
                 </StackLayout>
                 <Grid Grid.Row="2">
@@ -33,7 +34,6 @@
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="1">
                     <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
@@ -84,17 +84,19 @@
                 <StackLayout>
                 <Grid Grid.Row="1">
                     <StackLayout  Padding="15" HorizontalOptions="CenterAndExpand">
-                        <Button x:Name="IssueHeadsetsButton" BackgroundColor="PaleVioletRed" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Issue Headsets"></Button>
+                        <Button x:Name="IssueHeadsetsButton" BackgroundColor="PaleVioletRed" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Issue Headsets"
+                                Pressed="IssueHeadsetsButton_OnPressed"></Button>
                     </StackLayout>
                 </Grid>
                     <Grid Grid.Row="2">
                         <StackLayout Padding="15" HorizontalOptions="CenterAndExpand">
-                            <Button x:Name="ReturnHeadsetsButton" BackgroundColor="SlateGray" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Return Headsets"></Button>
+                            <Button x:Name="ReturnHeadsetsButton" BackgroundColor="SlateGray" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Return Headsets"
+                                    Pressed="ReturnHeadsetsButton_OnPressed"></Button>
                         </StackLayout>
                     </Grid>
                 </StackLayout>
             </Grid>
-
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

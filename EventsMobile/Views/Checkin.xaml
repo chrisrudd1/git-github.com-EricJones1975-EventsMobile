@@ -79,9 +79,6 @@
                         <Label x:Name ="GuestSubHeader" Text="Guest" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="16" FontAttributes="Bold"></Label>
                     </StackLayout>
                 </Grid>
-                <Grid Grid.Row="3">
-                    <StackLayout x:Name ="GuestDivider2" BackgroundColor="White"></StackLayout>
-                </Grid>
                 <Grid Grid.Row="4">
                     <StackLayout Padding="10">
                         <Label Text="This is some Placeholder Text" TextColor ="White"></Label>

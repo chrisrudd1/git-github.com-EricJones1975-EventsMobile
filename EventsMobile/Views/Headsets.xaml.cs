@@ -17,15 +17,14 @@ namespace EventsMobile.Views
             InitializeComponent();
         }
 
-        private void IssueButton_OnClicked(object sender, EventArgs e)
+        private void ReturnHeadsetsButton_OnPressed(object sender, EventArgs e)
         {
-            DisplayAlert("Issue Headsets", "Do you want to issue these headsets?", "Yes", "No");
+            DisplayAlert("Issue Headsets", "Would you like to issue headsets?", "Yes", "No");
         }
 
-
-        private void ReturnButton_OnClicked(object sender, EventArgs e)
+        private void IssueHeadsetsButton_OnPressed(object sender, EventArgs e)
         {
-            DisplayAlert("Return Headsets", "Do you want to return these headsets?", "Yes", "No");
+            DisplayAlert("Return Headsets", "Would you like to return headsets?", "Yes", "No");
         }
     }
 }

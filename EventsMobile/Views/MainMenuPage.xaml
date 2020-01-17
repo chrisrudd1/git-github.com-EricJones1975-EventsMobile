@@ -10,7 +10,7 @@
     <pages:MainMenuPageMaster x:Name="MasterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <NavigationPage BarBackgroundColor="PaleVioletRed">
+    <NavigationPage BarBackgroundColor="SlateGray">
       <x:Arguments>
         <pages:MainMenuPageDetail/>
       </x:Arguments>

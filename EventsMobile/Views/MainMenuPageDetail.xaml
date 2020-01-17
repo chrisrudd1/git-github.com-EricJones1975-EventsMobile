@@ -32,8 +32,9 @@
             <Image Source="headset96">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="TapGestureRecognizer_OnTapped"
-                        NumberOfTapsRequired="1"></TapGestureRecognizer>
+                       Tapped="TapGestureRecognizer_OnTapped"
+                        NumberOfTapsRequired="1">
+                    </TapGestureRecognizer>
                 </Image.GestureRecognizers>
             </Image>
         </StackLayout>
