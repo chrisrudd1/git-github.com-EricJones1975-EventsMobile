@@ -16,5 +16,16 @@ namespace EventsMobile.Views
         {
             InitializeComponent();
         }
+
+        private void IssueButton_OnClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Issue Headsets", "Do you want to issue these headsets?", "Yes", "No");
+        }
+
+
+        private void ReturnButton_OnClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Return Headsets", "Do you want to return these headsets?", "Yes", "No");
+        }
     }
 }

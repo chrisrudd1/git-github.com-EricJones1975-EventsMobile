@@ -4,12 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BackgroundImageSource="login.png"
+             BackgroundImageSource="BackgroundGradient4"
              x:Class="EventsMobile.Views.Headsets">
+   
     <ContentPage.Content>
         <StackLayout>
-            
-            <Grid BackgroundColor ="Transparent">
+            <Grid BackgroundColor ="SlateGray">
                 <Grid.RowDefinitions>
                     <RowDefinition Height ="Auto"></RowDefinition>
                     <RowDefinition Height ="Auto"></RowDefinition>
@@ -26,33 +26,75 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
+                    
                 </Grid.RowDefinitions>
-               
-                <Grid Grid.Row="2">
-                    <StackLayout Padding="10">
-                        <Label x:Name="NameLabel" Text="Name:" TextColor="White" FontAttributes="Bold" FontSize="15"></Label>
+                <Grid Grid.Row="1">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsNameLabel" TextColor="White" FontSize="16" Text="Name:"></Label>
                     </StackLayout>
-                    <StackLayout Grid.Column="1" Padding="10">
-                        <Label x:Name="NamePopUpLabel" Text="Joe Bloggs" TextColor="White" FontAttributes="Bold" FontSize="15" ></Label>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsNamePlaceHolder" TextColor="White" FontSize="18" FontAttributes="Bold" Text="Joe Bloggs"></Label>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Row="3">
-                    <StackLayout Padding="10">
-                        <Label x:Name="CountryLabel" Text="Country:" TextColor="White" FontAttributes="Bold" FontSize="15" ></Label>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsCountryLabel" TextColor="White" FontSize="16" Text="Country:"></Label>
                     </StackLayout>
-                    <StackLayout Grid.Column="1" Padding="10">
-                        <Label x:Name ="CountryPopUpLabel" Text="United Kingdom" TextColor="White" FontAttributes="Bold" FontSize="15"></Label>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsCountryPlaceHolder" TextColor="White" FontSize="18" FontAttributes="Bold" Text="United Kingdom"></Label>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Row="5">
-                    <StackLayout x:Name="HeadsetsDivider2" BackgroundColor="White" ></StackLayout>
-
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsOutstandingLabel" TextColor="White" FontSize="16" Text="Headsets Outstanding:"></Label>
+                    </StackLayout>
                 </Grid>
-            </Grid> 
+                <Grid Grid.Row="6">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsOutstandingPlaceHolder" TextColor="White" FontSize="18" FontAttributes="Bold" Text="Infinite"></Label>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsIssuedLabel" TextColor="White" FontSize="16"  Text="Headsets Issued:"></Label>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="8">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Padding="5">
+                        <Label x:Name="HeadsetsIssuedPlaceholder" TextColor="White" FontSize="18" FontAttributes="Bold" Text="Immeasurable"> </Label>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout>
+                <Grid Grid.Row="1">
+                    <StackLayout  Padding="15" HorizontalOptions="CenterAndExpand">
+                        <Button x:Name="IssueHeadsetsButton" BackgroundColor="PaleVioletRed" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Issue Headsets"></Button>
+                    </StackLayout>
+                </Grid>
+                    <Grid Grid.Row="2">
+                        <StackLayout Padding="15" HorizontalOptions="CenterAndExpand">
+                            <Button x:Name="ReturnHeadsetsButton" BackgroundColor="SlateGray" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Return Headsets"></Button>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using EventsMobile.Models;
 
 namespace EventsMobile.Database
 {
@@ -21,9 +22,10 @@ namespace EventsMobile.Database
            return _database.Table<Fbo>().ToListAsync();
        }
 
-       public Task<int> SavePersonAsync(Fbo fbo)
+       public Task<int> SaveFboAsync(Fbo fbo)
        {
            return _database.InsertAsync(fbo);
        }
-   }
+        
+    }
 }

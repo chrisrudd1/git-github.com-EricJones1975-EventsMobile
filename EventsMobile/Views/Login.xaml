@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              BackgroundImageSource="login.png"
              x:Class="EventsMobile.Login" >
-  <ContentPage.Content >
+  
+    <ContentPage.Content >
       <Grid BackgroundColor="Transparent">
           <Grid.RowDefinitions>
               <RowDefinition Height="Auto"/>
@@ -46,16 +47,12 @@
                   <Label Text="OR" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0" TextColor="White"/>
                   <Label BackgroundColor="Silver" Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
                   <Label BackgroundColor="Silver" Grid.Column="0" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
-
               </Grid>
-
              <StackLayout Orientation="Horizontal" Grid.Row="7" HorizontalOptions="Center" >
                  <Label HeightRequest="1" BackgroundColor="Transparent"/>
                  <Label Text="Don't have an account? Contact Us Here!" TextColor="White" FontSize="18" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-</StackLayout>
+             </StackLayout>
           </Grid>
-          
-             
       </Grid>
   </ContentPage.Content>
     </ContentPage>

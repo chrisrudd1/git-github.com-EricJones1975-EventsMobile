@@ -180,4 +180,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\SettingsGear.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon1-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon1-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon1-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon1-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon1-512.png" />
+  </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using EventsMobile;
+using EventsMobile.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -26,7 +27,7 @@ namespace EventsMobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainMenuPage();
         }
 
         protected override void OnStart()
