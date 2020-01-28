@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              NavigationPage.HasNavigationBar="False"
              x:Class="EventsMobile.App" >
-    <Application.Resources>
+    <Application.Resources >
+
 
     </Application.Resources>
 </Application>

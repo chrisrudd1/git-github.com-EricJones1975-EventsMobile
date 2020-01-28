@@ -26,7 +26,7 @@ namespace EventsMobile
         public App()
         {
             InitializeComponent();
-
+            
             MainPage = new Login();
         }
 
