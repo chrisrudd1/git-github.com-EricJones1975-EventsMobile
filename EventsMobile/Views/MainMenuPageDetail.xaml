@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BackgroundImageSource="BackgroundGradient1.png"
+             BackgroundImageSource=""
              x:Class="EventsMobile.Views.MainMenuPageDetail"
             
              Title="Main Menu">
@@ -21,8 +21,8 @@
         <StackLayout Grid.Row="0" Grid.Column="0">
             <Image Source="checkin96.png">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer 
-                        Tapped="TapGestureRecognizer_OnTapped"
+                    <TapGestureRecognizer x:Name="CheckIn"
+                        Tapped="CheckInTapGestureRecognizer_OnTapped"
                         NumberOfTapsRequired="1">
                     </TapGestureRecognizer>
                 </Image.GestureRecognizers>
@@ -31,14 +31,14 @@
         <StackLayout Grid.Row="0" Grid.Column="1">
             <Image Source="headset96">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                       Tapped="TapGestureRecognizer_OnTapped"
+                    <TapGestureRecognizer x:Name="Headsets"
+                       Tapped="Headsets_Tapped"
                         NumberOfTapsRequired="1">
                     </TapGestureRecognizer>
                 </Image.GestureRecognizers>
             </Image>
         </StackLayout>
-        <StackLayout Grid.Row="1" Grid.Column="0">
+        <!--<StackLayout Grid.Row="1" Grid.Column="0">
             <Image Source="training96">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer
@@ -46,8 +46,8 @@
                         NumberOfTapsRequired="1"></TapGestureRecognizer>
                 </Image.GestureRecognizers>
             </Image>
-        </StackLayout>
-        <StackLayout Grid.Row="1" Grid.Column="1">
+        </StackLayout>-->
+        <!--<StackLayout Grid.Row="1" Grid.Column="1">
             <Image Source="cheque96.png">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer
@@ -55,7 +55,7 @@
                         NumberOfTapsRequired="1"></TapGestureRecognizer>
                 </Image.GestureRecognizers>
             </Image>
-        </StackLayout>
+        </StackLayout>-->
 
 </Grid>
    

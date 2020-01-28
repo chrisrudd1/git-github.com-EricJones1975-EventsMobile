@@ -19,25 +19,26 @@ namespace EventsMobile.Views
 
       //This only works for one image per screen   
 
-       private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
+       private void CheckInTapGestureRecognizer_OnTapped(object sender, EventArgs e)
        {
            Navigation.PushModalAsync(new Checkin());
        }
 
-       
 
-       // private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
-       // {
-       //    throw new NotImplementedException();
-       // }
+        private void Headsets_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Headsets());
+        }
 
-       //private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
-       // {
-       //     throw new NotImplementedException();
 
-     //  private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
-       //{
-       //    Navigation.PushModalAsync(new Headsets());
-       //}
+
+        //private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
+        // {
+        //     throw new NotImplementedException();
+
+        //  private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
+        //{
+        //    Navigation.PushModalAsync(new Headsets());
+        //}
     }
     }

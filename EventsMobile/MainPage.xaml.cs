@@ -20,25 +20,11 @@ namespace EventsMobile
         {
             InitializeComponent();
         }
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
-            ListView.ItemsSource = await App.Database.GetFboAsync();
         }
 
-        async void OnButtonClicked(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(forenameEntry.Text) && !string.IsNullOrWhiteSpace(surnameEntry.Text))
-            {
-                await App.Database.SaveFboAsync(new Fbo
-                {
-                    Forename = forenameEntry.Text,
-                    Surname = surnameEntry.Text
-                });
-
-                forenameEntry.Text = surnameEntry.Text = string.Empty;
-                ListView.ItemsSource = await App.Database.GetFboAsync();
-            }
-        }
+       
     }
 }

@@ -27,7 +27,7 @@ namespace EventsMobile
         {
             InitializeComponent();
 
-            MainPage = new MainMenuPage();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

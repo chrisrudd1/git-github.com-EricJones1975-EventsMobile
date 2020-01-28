@@ -19,7 +19,7 @@ namespace EventsMobile
 
         private async void Login_button_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new MainMenuPage());
+            await Navigation.PushModalAsync(new LogInPopUp());
         }
     }
 }

@@ -33,11 +33,11 @@ namespace EventsMobile.Views
             {
                 MenuItems = new ObservableCollection<MainMenuPageMasterMenuItem>(new[]
                 {
-                    new MainMenuPageMasterMenuItem { Id = 1, Title = "Change Web connection " },
+                    new MainMenuPageMasterMenuItem { Id = 1, Title = "Change Web Connection " },
                     new MainMenuPageMasterMenuItem { Id = 2, Title = "Sync Data" },
                     new MainMenuPageMasterMenuItem { Id = 3, Title = "Training Mode" },
                     new MainMenuPageMasterMenuItem { Id = 4, Title = "Help" },
-                    new MainMenuPageMasterMenuItem { Id = 5, Title = "Contact Us!" },
+                    new MainMenuPageMasterMenuItem { Id = 5, Title = "Contact Us" },
                     new MainMenuPageMasterMenuItem { Id = 5, Title = "Log Out" },
                 });
             }

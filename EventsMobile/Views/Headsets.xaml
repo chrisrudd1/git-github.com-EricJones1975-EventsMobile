@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BackgroundImageSource="BackgroundGradient4"
+             BackgroundImageSource="login.png"
              x:Class="EventsMobile.Views.Headsets">
    
     <ContentPage.Content>
@@ -29,7 +29,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="Auto"/>
@@ -84,13 +84,13 @@
                 <StackLayout>
                 <Grid Grid.Row="1">
                     <StackLayout  Padding="15" HorizontalOptions="CenterAndExpand">
-                        <Button x:Name="IssueHeadsetsButton" BackgroundColor="PaleVioletRed" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Issue Headsets"
+                        <Button x:Name="IssueHeadsetsButton" BackgroundColor="PaleVioletRed" BorderColor="White" CornerRadius="20" BorderWidth="1" TextColor="White" WidthRequest="120" Text="Issue Headsets"
                                 Pressed="IssueHeadsetsButton_OnPressed"></Button>
                     </StackLayout>
                 </Grid>
                     <Grid Grid.Row="2">
-                        <StackLayout Padding="15" HorizontalOptions="CenterAndExpand">
-                            <Button x:Name="ReturnHeadsetsButton" BackgroundColor="SlateGray" BorderColor="White" CornerRadius="20 " BorderWidth="2" TextColor="White" Text="Return Headsets"
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Button x:Name="ReturnHeadsetsButton" BackgroundColor="SlateGray" BorderColor="White" CornerRadius="20" BorderWidth="1" TextColor="White" WidthRequest="120" Text="Return Headsets"
                                     Pressed="ReturnHeadsetsButton_OnPressed"></Button>
                         </StackLayout>
                     </Grid>

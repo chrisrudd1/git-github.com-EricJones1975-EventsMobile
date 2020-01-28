@@ -72,7 +72,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -125,6 +124,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>1.2.0.223</Version>
+    </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.7.302-beta</Version>
     </PackageReference>
@@ -139,46 +141,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\splash1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\splash2.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\splash3.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\splash4.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SplashImage.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SplashImageb.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_feed.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\rfidiomlogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\loginimage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\LoginBackground-Landscape_ipad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\loginbackgroundphone.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\login.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\SettingsGear.png" />
+    <BundleResource Include="Resources\checkin48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\checkin96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cheque48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cheque96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\headset48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\headset96.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icon1-64.png" />
@@ -194,5 +175,20 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icon1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\registrationicon48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\registrationicon96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\training48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\training96.png" />
   </ItemGroup>
 </Project>

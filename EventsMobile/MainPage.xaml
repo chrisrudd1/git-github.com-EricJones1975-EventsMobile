@@ -6,21 +6,5 @@
              mc:Ignorable="d"
              x:Class="EventsMobile.MainPage">
 
-    <StackLayout Margin="20,35,20,20" >
-        <Entry x:Name="forenameEntry"
-               Placeholder="Enter name" />
-        <Entry x:Name="surnameEntry"
-               Placeholder="Enter age" />
-        <Button Text="Add to Database"
-                Clicked="OnButtonClicked" />
-        <ListView x:Name="ListView">
-            <ListView.ItemTemplate >
-                <DataTemplate>
-                    <TextCell Text="{Binding Forename}"
-                              Detail="{Binding Surname}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
 
 </ContentPage>
