@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EventsMobile.Views
@@ -15,30 +9,8 @@ namespace EventsMobile.Views
         public MainMenuPageDetail()
         {
             InitializeComponent();
+            BindingContext = new CommunityViewModel();
         }
 
-      //This only works for one image per screen   
-
-       private void CheckInTapGestureRecognizer_OnTapped(object sender, EventArgs e)
-       {
-           Navigation.PushModalAsync(new Checkin());
-       }
-
-
-        private void Headsets_Tapped(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Headsets());
-        }
-
-
-
-        //private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
-        // {
-        //     throw new NotImplementedException();
-
-        //  private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
-        //{
-        //    Navigation.PushModalAsync(new Headsets());
-        //}
     }
-    }
+}

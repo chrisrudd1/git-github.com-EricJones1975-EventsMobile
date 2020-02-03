@@ -8,7 +8,7 @@
              x:Class="EventsMobile.Login" >
 
     <ContentView>
-        <StackLayout Padding="10">
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <Label Text=" Welcome" FontAttributes="Italic" TextColor="White" FontSize="16" HorizontalOptions="CenterAndExpand"/>
             <Button  CornerRadius="10" Text="Log In" BorderColor="Black" BackgroundColor="PaleVioletRed" TextColor="white" FontSize="18"  VerticalOptions="EndAndExpand" Clicked="Login_button_OnClicked" />
             <Label Text="Trouble Signing in? CLICK HERE!"  FontAttributes="Italic, Bold"

@@ -8,7 +8,7 @@
     xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
     mc:Ignorable="d"
     BackgroundImageSource="login.png"
-             x:Class="EventsMobile.Views.LogInPopUp">
+    x:Class="EventsMobile.Views.LogInPopUp">
 
     <pages:PopupPage.Animation>
         <animations:ScaleAnimation 
@@ -23,9 +23,9 @@
       HasBackgroundAnimation="True"/>
     </pages:PopupPage.Animation>
     <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="20, 20, 20, 20" >
-        <StackLayout BackgroundColor="Black" Padding="0, 10, 0, 0">
+        <StackLayout BackgroundColor="Transparent" Padding="0, 10, 0, 0">
             <Label Text="Enter your details below!" TextColor="White" FontSize="20" HorizontalOptions="Center" ></Label>
-            <ScrollView BackgroundColor="White" Padding="10">
+            <ScrollView BackgroundColor="Black" Padding="10">
                 <StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Entry Placeholder="Email"
